@@ -12,7 +12,37 @@
 </head>
 
 <body>
+    <div class="container">
+        <h1>Password Generator</h1>
 
+        <div class="result-group">
+            <input type="text" readonly>
+            <button class="clipboard-btn"><i class="fa-regular fa-clipboard"></i></button>
+        </div>
+
+        <div class="question-group">
+            <label for="length">Password Length</label>
+            <input type="number" name="length" id="length" value="10">
+        </div>
+        <div class="question-group">
+            <label for="uppercase">Include UpperCase Letter</label>
+            <input type="checkbox" name="uppercase" id="upper">
+        </div>
+        <div class="question-group">
+            <label for="lowercase">Include LowerCase Letter</label>
+            <input type="checkbox" name="lowercase" id="lower">
+        </div>
+        <div class="question-group">
+            <label for="number">Include Number</label>
+            <input type="checkbox" name="number" id="number">
+        </div>
+        <div class="question-group">
+            <label for="symbols">Include Symbols</label>
+            <input type="checkbox" name="symbols" id="symbols">
+        </div>
+
+        <button class="generate-btn">Generate Password</button>
+    </div>
     <script src="app.js"></script>
 </body>
 
